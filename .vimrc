@@ -1,4 +1,4 @@
-"================================ Vundle Config ================================                                                                     
+"================================ Vundle Config ================================
 set nocompatible              " be iMproved, required                           
 filetype off                  " required                                        
 set rtp+=~/.vim/bundle/Vundle.vim                                               
@@ -7,10 +7,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'                                                    
 Plugin 'vim-airline/vim-airline'                                                
 Plugin 'vim-airline/vim-airline-themes'                                         
-Plugin 'nathanalderson/yang.vim' "YANG syntax highlight                                                                
+Plugin 'nathanalderson/yang.vim' "YANG syntax highlight                         
 Plugin 'dracula/vim', {'name': 'dracula'}                                       
 Plugin 'Yggdroot/indentLine'                                                    
-Plugin 'jiangmiao/auto-pairs'                                                      
+Plugin 'jiangmiao/auto-pairs'                                                   
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'                                
 Plugin 'ryanoasis/vim-webdevicons'                                              
 call vundle#end()            " required                                         
@@ -38,7 +38,7 @@ set listchars=tab:>-
 set t_Co=256                                                                    
 set cursorline                                                                  
 "=============================== Airline Config ================================
-let g:airline_powerline_fonts = 1                                                                                           
+let g:airline_powerline_fonts = 1                                               
 "=================================== Key Maps ==================================
 map <C-o> :NERDTreeToggle<CR>                                                   
 map <C-c> :NERDTreeCWD<CR>                                                      
@@ -51,14 +51,14 @@ vmap <silent><S-Tab> :<< <CR> gv
 map <MiddleMouse> <Nop>                                                         
 imap <MiddleMouse> <Nop>                                                        
 "================================= Colorscheme =================================
-syntax on                                                                                                                           
+syntax on                                                                       
 colorscheme dracula                                                             
 "============================== NERDTree Config ================================
 autocmd vimenter * NERDTree                                                     
 autocmd StdinReadPre * let s:std_in=1                                           
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif     
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")                  
-  ¦ ¦ ¦ \ && b:NERDTree.isTabTree()) | q | endif                                
+        \ && b:NERDTree.isTabTree()) | q | endif                                
                                                                                 
 let NERDTreeWinSize=51                                                          
 let NERDTreeMinimalUI=1                                                         
